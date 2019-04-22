@@ -1,6 +1,21 @@
-;;; flycheck-clolyze.el --- Add clolyze to flycheck
+;;; flycheck-clolyze.el --- Add Clolyze to to flycheck -*- lexical-binding: t; -*-
 
-;;; Copyright (C) 2019 Daniel Laps
+;; Copyright (C) 2019 Daniel Laps <daniel.laps@hhu.de>
+;;
+;; URL: https://github.com/DLaps/flycheck-clolyze
+;; Author: Daniel Laps <daniel.laps@hhu.de>
+;; Version: 1.0.0
+;; Package-Requires: ((flycheck "0.25") (emacs "24"))
+
+;;; Commentary:
+
+;; This package adds Clolyze to flycheck.  To use it, add
+;; to your init.el:
+;; (require 'flycheck-clolyze)
+
+;;; License:
+
+;; This file is not part of GNU Emacs.
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -15,13 +30,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-;;; Commentary:
-
-;; This package adds Clolyze to flycheck.  To use it, add
-;; to your init.el:
-;; (require 'flycheck-clolyze)
-
-
+;;; Code:
 (require 'flycheck)
 
 (flycheck-define-checker clolyze
@@ -33,3 +42,4 @@
 (add-to-list 'flycheck-checkers 'clolyze)
 
 (provide 'flycheck-clolyze)
+;;; flycheck-clolyze.el ends here
